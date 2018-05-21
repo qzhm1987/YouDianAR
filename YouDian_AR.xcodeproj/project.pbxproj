@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79307D7AFF4AFD2885E47AAE /* libPods-YouDian_AR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C000307527664458C0C40F51 /* libPods-YouDian_AR.a */; };
+		CBF5B55620AE840200FBACC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF5B55520AE840200FBACC4 /* AppDelegate.m */; };
+		CBF5B55E20AE840800FBACC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF5B55D20AE840800FBACC4 /* Assets.xcassets */; };
+		CBF5B56420AE840800FBACC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF5B56320AE840800FBACC4 /* main.m */; };
+		CBF5B56E20AE840800FBACC4 /* YouDian_ARTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF5B56D20AE840800FBACC4 /* YouDian_ARTests.m */; };
+		CBF5B57920AE840800FBACC4 /* YouDian_ARUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF5B57820AE840800FBACC4 /* YouDian_ARUITests.m */; };
+		CBF5B58C20AEA7D500FBACC4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF5B58B20AEA7D500FBACC4 /* MainViewController.m */; };
+		CBF5B59420AEABC400FBACC4 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF5B59320AEABC400FBACC4 /* UserInfoViewController.m */; };
+		CBF5B59720AEABF900FBACC4 /* ARScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF5B59620AEABF900FBACC4 /* ARScanViewController.m */; };
+		CBF5B5A020AEC31E00FBACC4 /* AppDelegate+AR.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF5B59F20AEC31E00FBACC4 /* AppDelegate+AR.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBF5B56A20AE840800FBACC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBF5B54920AE840200FBACC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBF5B55020AE840200FBACC4;
+			remoteInfo = YouDian_AR;
+		};
+		CBF5B57520AE840800FBACC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBF5B54920AE840200FBACC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBF5B55020AE840200FBACC4;
+			remoteInfo = YouDian_AR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		74C4A6C739F2BC5DDED6FF30 /* Pods-YouDian_AR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouDian_AR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouDian_AR/Pods-YouDian_AR.debug.xcconfig"; sourceTree = "<group>"; };
+		A6E1FF520ABB1264D0A8C3D3 /* Pods-YouDian_AR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouDian_AR.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouDian_AR/Pods-YouDian_AR.release.xcconfig"; sourceTree = "<group>"; };
+		C000307527664458C0C40F51 /* libPods-YouDian_AR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YouDian_AR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF5B55120AE840200FBACC4 /* YouDian_AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouDian_AR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF5B55420AE840200FBACC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBF5B55520AE840200FBACC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBF5B55D20AE840800FBACC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBF5B56220AE840800FBACC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF5B56320AE840800FBACC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBF5B56920AE840800FBACC4 /* YouDian_ARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouDian_ARTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF5B56D20AE840800FBACC4 /* YouDian_ARTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YouDian_ARTests.m; sourceTree = "<group>"; };
+		CBF5B56F20AE840800FBACC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF5B57420AE840800FBACC4 /* YouDian_ARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouDian_ARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF5B57820AE840800FBACC4 /* YouDian_ARUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YouDian_ARUITests.m; sourceTree = "<group>"; };
+		CBF5B57A20AE840800FBACC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF5B58620AE849500FBACC4 /* YouDian.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YouDian.pch; sourceTree = "<group>"; };
+		CBF5B58A20AEA7D500FBACC4 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		CBF5B58B20AEA7D500FBACC4 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		CBF5B59220AEABC400FBACC4 /* UserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		CBF5B59320AEABC400FBACC4 /* UserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		CBF5B59520AEABF900FBACC4 /* ARScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARScanViewController.h; sourceTree = "<group>"; };
+		CBF5B59620AEABF900FBACC4 /* ARScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARScanViewController.m; sourceTree = "<group>"; };
+		CBF5B59E20AEC31E00FBACC4 /* AppDelegate+AR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AR.h"; sourceTree = "<group>"; };
+		CBF5B59F20AEC31E00FBACC4 /* AppDelegate+AR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AR.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBF5B54E20AE840200FBACC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79307D7AFF4AFD2885E47AAE /* libPods-YouDian_AR.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF5B56620AE840800FBACC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF5B57120AE840800FBACC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53004D32B0AC338B1BB13798 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74C4A6C739F2BC5DDED6FF30 /* Pods-YouDian_AR.debug.xcconfig */,
+				A6E1FF520ABB1264D0A8C3D3 /* Pods-YouDian_AR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8FD77F2965F99C218ED2FC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C000307527664458C0C40F51 /* libPods-YouDian_AR.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBF5B54820AE840200FBACC4 = {
+			isa = PBXGroup;
+			children = (
+				CBF5B55320AE840200FBACC4 /* YouDian_AR */,
+				CBF5B58720AEA7A900FBACC4 /* Model */,
+				CBF5B58920AEA7A900FBACC4 /* View */,
+				CBF5B58820AEA7A900FBACC4 /* Controllers */,
+				CBF5B56C20AE840800FBACC4 /* YouDian_ARTests */,
+				CBF5B57720AE840800FBACC4 /* YouDian_ARUITests */,
+				CBF5B55220AE840200FBACC4 /* Products */,
+				53004D32B0AC338B1BB13798 /* Pods */,
+				A8FD77F2965F99C218ED2FC6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CBF5B55220AE840200FBACC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBF5B55120AE840200FBACC4 /* YouDian_AR.app */,
+				CBF5B56920AE840800FBACC4 /* YouDian_ARTests.xctest */,
+				CBF5B57420AE840800FBACC4 /* YouDian_ARUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBF5B55320AE840200FBACC4 /* YouDian_AR */ = {
+			isa = PBXGroup;
+			children = (
+				CBF5B55420AE840200FBACC4 /* AppDelegate.h */,
+				CBF5B55520AE840200FBACC4 /* AppDelegate.m */,
+				CBF5B59E20AEC31E00FBACC4 /* AppDelegate+AR.h */,
+				CBF5B59F20AEC31E00FBACC4 /* AppDelegate+AR.m */,
+				CBF5B55D20AE840800FBACC4 /* Assets.xcassets */,
+				CBF5B56220AE840800FBACC4 /* Info.plist */,
+				CBF5B56320AE840800FBACC4 /* main.m */,
+				CBF5B58620AE849500FBACC4 /* YouDian.pch */,
+			);
+			path = YouDian_AR;
+			sourceTree = "<group>";
+		};
+		CBF5B56C20AE840800FBACC4 /* YouDian_ARTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBF5B56D20AE840800FBACC4 /* YouDian_ARTests.m */,
+				CBF5B56F20AE840800FBACC4 /* Info.plist */,
+			);
+			path = YouDian_ARTests;
+			sourceTree = "<group>";
+		};
+		CBF5B57720AE840800FBACC4 /* YouDian_ARUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBF5B57820AE840800FBACC4 /* YouDian_ARUITests.m */,
+				CBF5B57A20AE840800FBACC4 /* Info.plist */,
+			);
+			path = YouDian_ARUITests;
+			sourceTree = "<group>";
+		};
+		CBF5B58720AEA7A900FBACC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBF5B58820AEA7A900FBACC4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBF5B58D20AEA81100FBACC4 /* 首页 */,
+				CBF5B59120AEAA9600FBACC4 /* AR扫描 */,
+				CBF5B59020AEAA9600FBACC4 /* 个人中心 */,
+				CBF5B59920AEADA700FBACC4 /* 登录 */,
+				CBF5B59820AEADA700FBACC4 /* 功能测试 */,
+				CBF5B59A20AEADA800FBACC4 /* 其他 */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CBF5B58920AEA7A900FBACC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBF5B58D20AEA81100FBACC4 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF5B58A20AEA7D500FBACC4 /* MainViewController.h */,
+				CBF5B58B20AEA7D500FBACC4 /* MainViewController.m */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		CBF5B59020AEAA9600FBACC4 /* 个人中心 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF5B59220AEABC400FBACC4 /* UserInfoViewController.h */,
+				CBF5B59320AEABC400FBACC4 /* UserInfoViewController.m */,
+			);
+			path = "个人中心";
+			sourceTree = "<group>";
+		};
+		CBF5B59120AEAA9600FBACC4 /* AR扫描 */ = {
+			isa = PBXGroup;
+			children = (
+				CBF5B59520AEABF900FBACC4 /* ARScanViewController.h */,
+				CBF5B59620AEABF900FBACC4 /* ARScanViewController.m */,
+			);
+			path = "AR扫描";
+			sourceTree = "<group>";
+		};
+		CBF5B59820AEADA700FBACC4 /* 功能测试 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "功能测试";
+			sourceTree = "<group>";
+		};
+		CBF5B59920AEADA700FBACC4 /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
+		CBF5B59A20AEADA800FBACC4 /* 其他 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "其他";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBF5B55020AE840200FBACC4 /* YouDian_AR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF5B57D20AE840800FBACC4 /* Build configuration list for PBXNativeTarget "YouDian_AR" */;
+			buildPhases = (
+				39002F503132B26988A2B3DA /* [CP] Check Pods Manifest.lock */,
+				CBF5B54D20AE840200FBACC4 /* Sources */,
+				CBF5B54E20AE840200FBACC4 /* Frameworks */,
+				CBF5B54F20AE840200FBACC4 /* Resources */,
+				3F7061D0FD649ACAC72A4081 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YouDian_AR;
+			productName = YouDian_AR;
+			productReference = CBF5B55120AE840200FBACC4 /* YouDian_AR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBF5B56820AE840800FBACC4 /* YouDian_ARTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF5B58020AE840800FBACC4 /* Build configuration list for PBXNativeTarget "YouDian_ARTests" */;
+			buildPhases = (
+				CBF5B56520AE840800FBACC4 /* Sources */,
+				CBF5B56620AE840800FBACC4 /* Frameworks */,
+				CBF5B56720AE840800FBACC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBF5B56B20AE840800FBACC4 /* PBXTargetDependency */,
+			);
+			name = YouDian_ARTests;
+			productName = YouDian_ARTests;
+			productReference = CBF5B56920AE840800FBACC4 /* YouDian_ARTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBF5B57320AE840800FBACC4 /* YouDian_ARUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF5B58320AE840800FBACC4 /* Build configuration list for PBXNativeTarget "YouDian_ARUITests" */;
+			buildPhases = (
+				CBF5B57020AE840800FBACC4 /* Sources */,
+				CBF5B57120AE840800FBACC4 /* Frameworks */,
+				CBF5B57220AE840800FBACC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBF5B57620AE840800FBACC4 /* PBXTargetDependency */,
+			);
+			name = YouDian_ARUITests;
+			productName = YouDian_ARUITests;
+			productReference = CBF5B57420AE840800FBACC4 /* YouDian_ARUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBF5B54920AE840200FBACC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = YouDian;
+				TargetAttributes = {
+					CBF5B55020AE840200FBACC4 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					CBF5B56820AE840800FBACC4 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = CBF5B55020AE840200FBACC4;
+					};
+					CBF5B57320AE840800FBACC4 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = CBF5B55020AE840200FBACC4;
+					};
+				};
+			};
+			buildConfigurationList = CBF5B54C20AE840200FBACC4 /* Build configuration list for PBXProject "YouDian_AR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBF5B54820AE840200FBACC4;
+			productRefGroup = CBF5B55220AE840200FBACC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBF5B55020AE840200FBACC4 /* YouDian_AR */,
+				CBF5B56820AE840800FBACC4 /* YouDian_ARTests */,
+				CBF5B57320AE840800FBACC4 /* YouDian_ARUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBF5B54F20AE840200FBACC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF5B55E20AE840800FBACC4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF5B56720AE840800FBACC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF5B57220AE840800FBACC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39002F503132B26988A2B3DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YouDian_AR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F7061D0FD649ACAC72A4081 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YouDian_AR/Pods-YouDian_AR-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouDian_AR/Pods-YouDian_AR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBF5B54D20AE840200FBACC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF5B59720AEABF900FBACC4 /* ARScanViewController.m in Sources */,
+				CBF5B5A020AEC31E00FBACC4 /* AppDelegate+AR.m in Sources */,
+				CBF5B56420AE840800FBACC4 /* main.m in Sources */,
+				CBF5B59420AEABC400FBACC4 /* UserInfoViewController.m in Sources */,
+				CBF5B58C20AEA7D500FBACC4 /* MainViewController.m in Sources */,
+				CBF5B55620AE840200FBACC4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF5B56520AE840800FBACC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF5B56E20AE840800FBACC4 /* YouDian_ARTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF5B57020AE840800FBACC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF5B57920AE840800FBACC4 /* YouDian_ARUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBF5B56B20AE840800FBACC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBF5B55020AE840200FBACC4 /* YouDian_AR */;
+			targetProxy = CBF5B56A20AE840800FBACC4 /* PBXContainerItemProxy */;
+		};
+		CBF5B57620AE840800FBACC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBF5B55020AE840200FBACC4 /* YouDian_AR */;
+			targetProxy = CBF5B57520AE840800FBACC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CBF5B57B20AE840800FBACC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBF5B57C20AE840800FBACC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBF5B57E20AE840800FBACC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74C4A6C739F2BC5DDED6FF30 /* Pods-YouDian_AR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMWZ37P3G;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YouDian_AR/YouDian.pch";
+				INFOPLIST_FILE = YouDian_AR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-AR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Debug;
+		};
+		CBF5B57F20AE840800FBACC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6E1FF520ABB1264D0A8C3D3 /* Pods-YouDian_AR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMWZ37P3G;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YouDian_AR/YouDian.pch";
+				INFOPLIST_FILE = YouDian_AR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-AR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Release;
+		};
+		CBF5B58120AE840800FBACC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMWZ37P3G;
+				INFOPLIST_FILE = YouDian_ARTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-ARTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouDian_AR.app/YouDian_AR";
+			};
+			name = Debug;
+		};
+		CBF5B58220AE840800FBACC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMWZ37P3G;
+				INFOPLIST_FILE = YouDian_ARTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-ARTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouDian_AR.app/YouDian_AR";
+			};
+			name = Release;
+		};
+		CBF5B58420AE840800FBACC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMWZ37P3G;
+				INFOPLIST_FILE = YouDian_ARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-ARUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YouDian_AR;
+			};
+			name = Debug;
+		};
+		CBF5B58520AE840800FBACC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMWZ37P3G;
+				INFOPLIST_FILE = YouDian_ARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-ARUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YouDian_AR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBF5B54C20AE840200FBACC4 /* Build configuration list for PBXProject "YouDian_AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF5B57B20AE840800FBACC4 /* Debug */,
+				CBF5B57C20AE840800FBACC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBF5B57D20AE840800FBACC4 /* Build configuration list for PBXNativeTarget "YouDian_AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF5B57E20AE840800FBACC4 /* Debug */,
+				CBF5B57F20AE840800FBACC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBF5B58020AE840800FBACC4 /* Build configuration list for PBXNativeTarget "YouDian_ARTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF5B58120AE840800FBACC4 /* Debug */,
+				CBF5B58220AE840800FBACC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBF5B58320AE840800FBACC4 /* Build configuration list for PBXNativeTarget "YouDian_ARUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF5B58420AE840800FBACC4 /* Debug */,
+				CBF5B58520AE840800FBACC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBF5B54920AE840200FBACC4 /* Project object */;
+}

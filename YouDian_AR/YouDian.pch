@@ -1,0 +1,62 @@
+//
+//  YouDian.pch
+//  YouDian_AR
+//
+//  Created by youdian on 2018/5/18.
+//  Copyright © 2018年 YouDian. All rights reserved.
+//
+
+#ifndef YouDian_pch
+#define YouDian_pch
+
+#import "AppDelegate.h"
+#import <Masonry.h>
+#import <AFNetworking.h>
+#import <Toast.h>
+#import <FMDB.h>
+#import <YYModel.h>
+#import <MJRefresh.h>
+#import <MBProgressHUD+Extension.h>
+
+
+
+#define TABLE_COLOR [UIColor groupTableViewBackgroundColor]
+//2896F5
+#define THEME_COLOR   [UIColor colorWithRed:40.0f/255.0 green:150.0f/255.0 blue:245.0f/255.0 alpha:1.0f]
+#define YUN_THEME   [UIColor colorWithRed:25.0f/255.0 green:94.0f/255.0 blue:196.0f/255.0 alpha:1.0f]
+#define ALERT(msg)  UIAlertView *alterView = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:msg delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];[alterView show];
+
+#define USER_DEFAULT  [NSUserDefaults standardUserDefaults]
+#define AppDel         ((AppDelegate *)[UIApplication sharedApplication].delegate)
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#define IMAGE_NAME(name)  [UIImage imageNamed:name]
+#define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+
+
+#define SCREEN_WIDTH  [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT  [[UIScreen mainScreen] bounds].size.height
+#define PIX (SCREEN_WIDTH/375.0f)
+
+#define WTOAST(msg) UIWindow *window= [UIApplication sharedApplication].keyWindow; [window hideToasts];  [window makeToast:msg duration:1.5 position:CSToastPositionBottom];
+#define CWTOAST(msg) UIWindow *window= [UIApplication sharedApplication].keyWindow; [window hideToasts];  [window makeToast:msg duration:2.0 position:CSToastPositionCenter];
+
+#define HOST @"https://zpi.zhyell.com"
+//字符串是否为空
+#define IsStrEmpty(_ref)    (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref)isEqualToString:@""]))
+//数组是否为空
+#define IsArrEmpty(_ref)    (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref) count] == 0))
+
+#ifdef DEBUG
+#define DLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+#define DLog(...)
+#endif
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* YouDian_pch */

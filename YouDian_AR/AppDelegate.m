@@ -48,7 +48,7 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setBarTintColor:THEME_COLOR];
-    [[UINavigationBar appearance]  setTranslucent:NO];
+    [[UINavigationBar appearance]  setTranslucent:YES];
     [[UINavigationBar appearance]  setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
     self.window.rootViewController = tabBar;
     

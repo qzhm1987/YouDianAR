@@ -14,5 +14,8 @@ typedef void(^failBlock)(NSURLSessionDataTask *  task,NSError * error);
 
 @interface MainViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-@property (nonatomic ,assign) CGFloat content_height;
+
+
+
+@property (strong, nonatomic)NSArray *functionArray;
 @end

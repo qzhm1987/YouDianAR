@@ -38,6 +38,7 @@
 #define SCREEN_WIDTH  [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT  [[UIScreen mainScreen] bounds].size.height
 #define PIX (SCREEN_WIDTH/375.0f)
+#define UP_OFFSET 25//距离底端距离
 
 #define WTOAST(msg) UIWindow *window= [UIApplication sharedApplication].keyWindow; [window hideToasts];  [window makeToast:msg duration:1.5 position:CSToastPositionBottom];
 #define CWTOAST(msg) UIWindow *window= [UIApplication sharedApplication].keyWindow; [window hideToasts];  [window makeToast:msg duration:2.0 position:CSToastPositionCenter];

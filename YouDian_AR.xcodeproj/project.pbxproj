@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		79307D7AFF4AFD2885E47AAE /* libPods-YouDian_AR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C000307527664458C0C40F51 /* libPods-YouDian_AR.a */; };
+		CB614DDC20B7E6FC00EF8909 /* MyCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614DDB20B7E6FC00EF8909 /* MyCardViewController.m */; };
+		CB614DDF20B7E75700EF8909 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614DDE20B7E75700EF8909 /* HttpManager.m */; };
+		CB614DE220B7F7DF00EF8909 /* ARTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614DE120B7F7DF00EF8909 /* ARTableViewCell.m */; };
 		CBF5B55620AE840200FBACC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF5B55520AE840200FBACC4 /* AppDelegate.m */; };
 		CBF5B55E20AE840800FBACC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF5B55D20AE840800FBACC4 /* Assets.xcassets */; };
 		CBF5B56420AE840800FBACC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF5B56320AE840800FBACC4 /* main.m */; };
@@ -40,6 +43,12 @@
 		74C4A6C739F2BC5DDED6FF30 /* Pods-YouDian_AR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouDian_AR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouDian_AR/Pods-YouDian_AR.debug.xcconfig"; sourceTree = "<group>"; };
 		A6E1FF520ABB1264D0A8C3D3 /* Pods-YouDian_AR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouDian_AR.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouDian_AR/Pods-YouDian_AR.release.xcconfig"; sourceTree = "<group>"; };
 		C000307527664458C0C40F51 /* libPods-YouDian_AR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YouDian_AR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB614DDA20B7E6FC00EF8909 /* MyCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCardViewController.h; sourceTree = "<group>"; };
+		CB614DDB20B7E6FC00EF8909 /* MyCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCardViewController.m; sourceTree = "<group>"; };
+		CB614DDD20B7E75700EF8909 /* HttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
+		CB614DDE20B7E75700EF8909 /* HttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
+		CB614DE020B7F7DF00EF8909 /* ARTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARTableViewCell.h; sourceTree = "<group>"; };
+		CB614DE120B7F7DF00EF8909 /* ARTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARTableViewCell.m; sourceTree = "<group>"; };
 		CBF5B55120AE840200FBACC4 /* YouDian_AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouDian_AR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF5B55420AE840200FBACC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CBF5B55520AE840200FBACC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -167,6 +176,8 @@
 		CBF5B58720AEA7A900FBACC4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CB614DDD20B7E75700EF8909 /* HttpManager.h */,
+				CB614DDE20B7E75700EF8909 /* HttpManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +198,8 @@
 		CBF5B58920AEA7A900FBACC4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CB614DE020B7F7DF00EF8909 /* ARTableViewCell.h */,
+				CB614DE120B7F7DF00EF8909 /* ARTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +209,8 @@
 			children = (
 				CBF5B58A20AEA7D500FBACC4 /* MainViewController.h */,
 				CBF5B58B20AEA7D500FBACC4 /* MainViewController.m */,
+				CB614DDA20B7E6FC00EF8909 /* MyCardViewController.h */,
+				CB614DDB20B7E6FC00EF8909 /* MyCardViewController.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -409,8 +424,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBF5B59720AEABF900FBACC4 /* ARScanViewController.m in Sources */,
+				CB614DE220B7F7DF00EF8909 /* ARTableViewCell.m in Sources */,
 				CBF5B5A020AEC31E00FBACC4 /* AppDelegate+AR.m in Sources */,
 				CBF5B56420AE840800FBACC4 /* main.m in Sources */,
+				CB614DDF20B7E75700EF8909 /* HttpManager.m in Sources */,
+				CB614DDC20B7E6FC00EF8909 /* MyCardViewController.m in Sources */,
 				CBF5B59420AEABC400FBACC4 /* UserInfoViewController.m in Sources */,
 				CBF5B58C20AEA7D500FBACC4 /* MainViewController.m in Sources */,
 				CBF5B55620AE840200FBACC4 /* AppDelegate.m in Sources */,
@@ -570,7 +588,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YouDian_AR/YouDian.pch";
 				INFOPLIST_FILE = YouDian_AR/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -593,7 +611,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YouDian_AR/YouDian.pch";
 				INFOPLIST_FILE = YouDian_AR/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -188,9 +188,6 @@
 				CBF5B58D20AEA81100FBACC4 /* 首页 */,
 				CBF5B59120AEAA9600FBACC4 /* AR扫描 */,
 				CBF5B59020AEAA9600FBACC4 /* 个人中心 */,
-				CBF5B59920AEADA700FBACC4 /* 登录 */,
-				CBF5B59820AEADA700FBACC4 /* 功能测试 */,
-				CBF5B59A20AEADA800FBACC4 /* 其他 */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -231,27 +228,6 @@
 				CBF5B59620AEABF900FBACC4 /* ARScanViewController.m */,
 			);
 			path = "AR扫描";
-			sourceTree = "<group>";
-		};
-		CBF5B59820AEADA700FBACC4 /* 功能测试 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "功能测试";
-			sourceTree = "<group>";
-		};
-		CBF5B59920AEADA700FBACC4 /* 登录 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "登录";
-			sourceTree = "<group>";
-		};
-		CBF5B59A20AEADA800FBACC4 /* 其他 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "其他";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

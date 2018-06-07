@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		79307D7AFF4AFD2885E47AAE /* libPods-YouDian_AR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C000307527664458C0C40F51 /* libPods-YouDian_AR.a */; };
+		CB1191DB20BD028C0017B8CB /* HUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1191DA20BD028C0017B8CB /* HUDViewController.m */; };
 		CB614DDC20B7E6FC00EF8909 /* MyCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614DDB20B7E6FC00EF8909 /* MyCardViewController.m */; };
 		CB614DDF20B7E75700EF8909 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614DDE20B7E75700EF8909 /* HttpManager.m */; };
 		CB614DE220B7F7DF00EF8909 /* ARTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614DE120B7F7DF00EF8909 /* ARTableViewCell.m */; };
@@ -43,6 +44,8 @@
 		74C4A6C739F2BC5DDED6FF30 /* Pods-YouDian_AR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouDian_AR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouDian_AR/Pods-YouDian_AR.debug.xcconfig"; sourceTree = "<group>"; };
 		A6E1FF520ABB1264D0A8C3D3 /* Pods-YouDian_AR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouDian_AR.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouDian_AR/Pods-YouDian_AR.release.xcconfig"; sourceTree = "<group>"; };
 		C000307527664458C0C40F51 /* libPods-YouDian_AR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YouDian_AR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1191D920BD028C0017B8CB /* HUDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HUDViewController.h; sourceTree = "<group>"; };
+		CB1191DA20BD028C0017B8CB /* HUDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HUDViewController.m; sourceTree = "<group>"; };
 		CB614DDA20B7E6FC00EF8909 /* MyCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCardViewController.h; sourceTree = "<group>"; };
 		CB614DDB20B7E6FC00EF8909 /* MyCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCardViewController.m; sourceTree = "<group>"; };
 		CB614DDD20B7E75700EF8909 /* HttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
@@ -208,6 +211,8 @@
 				CBF5B58B20AEA7D500FBACC4 /* MainViewController.m */,
 				CB614DDA20B7E6FC00EF8909 /* MyCardViewController.h */,
 				CB614DDB20B7E6FC00EF8909 /* MyCardViewController.m */,
+				CB1191D920BD028C0017B8CB /* HUDViewController.h */,
+				CB1191DA20BD028C0017B8CB /* HUDViewController.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -381,10 +386,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YouDian_AR/Pods-YouDian_AR-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1191DB20BD028C0017B8CB /* HUDViewController.m in Sources */,
 				CBF5B59720AEABF900FBACC4 /* ARScanViewController.m in Sources */,
 				CB614DE220B7F7DF00EF8909 /* ARTableViewCell.m in Sources */,
 				CBF5B5A020AEC31E00FBACC4 /* AppDelegate+AR.m in Sources */,
@@ -565,10 +573,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YouDian_AR/YouDian.pch";
 				INFOPLIST_FILE = YouDian_AR/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-AR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -588,10 +593,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YouDian_AR/YouDian.pch";
 				INFOPLIST_FILE = YouDian_AR/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-AR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -606,11 +608,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJMWZ37P3G;
 				INFOPLIST_FILE = YouDian_ARTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-ARTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -625,11 +623,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJMWZ37P3G;
 				INFOPLIST_FILE = YouDian_ARTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-ARTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -643,11 +637,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJMWZ37P3G;
 				INFOPLIST_FILE = YouDian_ARUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-ARUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -661,11 +651,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJMWZ37P3G;
 				INFOPLIST_FILE = YouDian_ARUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-ARUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

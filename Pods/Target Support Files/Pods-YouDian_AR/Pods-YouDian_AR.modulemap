@@ -1,0 +1,6 @@
+module Pods_YouDian_AR [system] {
+  umbrella header "Pods-YouDian_AR-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -17,16 +17,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
-  //  [MBProgressHUD showTip:@"正在加载"];
-    
-    
     MBProgressHUD *hud =[MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.label.text = @"正在加载";
     hud.label.textColor = [UIColor whiteColor];
     hud.bezelView.backgroundColor=[UIColor blackColor];
     
-    
+    /*
+     [SVProgressHUD showWithStatus:@"加载中"];
+     [SVProgressHUD dismiss];
+     //时间
+     [SVProgressHUD setMinimumDismissTimeInterval:3];
+     [SVProgressHUD showSuccessWithStatus:@"成功"];
+     
+     [SVProgressHUD showWithStatus:@"加载中"];
+     [SVProgressHUD setBackgroundColor:[UIColor blackColor]];
+     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
+     
+     
+     [SVProgressHUD showImage:nil status:@"请输入正确的手机号"];
+     [SVProgressHUD setBackgroundColor:[UIColor blackColor]];
+     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+     
+     
+    [SVProgressHUD setMinimumDismissTimeInterval:3];
+    [SVProgressHUD setBackgroundColor:[UIColor blackColor]];
+    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    [SVProgressHUD showInfoWithStatus:@"加载提示"];
+       */
     
     // Do any additional setup after loading the view.
 }

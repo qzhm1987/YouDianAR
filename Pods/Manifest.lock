@@ -26,6 +26,7 @@ PODS:
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
+  - SVProgressHUD (2.2.5)
   - Toast (4.0.0)
   - YYModel (1.0.4)
 
@@ -38,6 +39,7 @@ DEPENDENCIES:
   - MBProgressHUD-Extension (~> 2.0.0)
   - MJRefresh (~> 3.1.15.3)
   - SDWebImage (~> 4.3.3)
+  - SVProgressHUD (~> 2.2.5)
   - Toast (~> 4.0.0)
   - YYModel (~> 1.0.4)
 
@@ -51,6 +53,7 @@ SPEC REPOS:
     - MBProgressHUD-Extension
     - MJRefresh
     - SDWebImage
+    - SVProgressHUD
     - Toast
     - YYModel
 
@@ -63,9 +66,10 @@ SPEC CHECKSUMS:
   MBProgressHUD-Extension: 6233a12de237d4038a7ca8070f84e3fdb51a49fb
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 1ceb7a574eb4045ddfd6de6c69c8350791228783
+PODFILE CHECKSUM: a14451f77c76bb09d2523a021fd62914e3f05bc2
 
 COCOAPODS: 1.5.0

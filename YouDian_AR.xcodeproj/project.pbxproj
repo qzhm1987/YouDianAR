@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		79307D7AFF4AFD2885E47AAE /* libPods-YouDian_AR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C000307527664458C0C40F51 /* libPods-YouDian_AR.a */; };
+		CB0DCD3B20D34AFD000AD558 /* NNValidationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0DCD3A20D34AFD000AD558 /* NNValidationView.m */; };
+		CB0DCD3F20D34F56000AD558 /* NNTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0DCD3D20D34F55000AD558 /* NNTestViewController.m */; };
+		CB0DCD4220D355F2000AD558 /* NSString+YD_AR.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0DCD4120D355F2000AD558 /* NSString+YD_AR.m */; };
 		CB1191DB20BD028C0017B8CB /* HUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1191DA20BD028C0017B8CB /* HUDViewController.m */; };
 		CB614DDC20B7E6FC00EF8909 /* MyCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614DDB20B7E6FC00EF8909 /* MyCardViewController.m */; };
 		CB614DDF20B7E75700EF8909 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614DDE20B7E75700EF8909 /* HttpManager.m */; };
@@ -44,6 +47,12 @@
 		74C4A6C739F2BC5DDED6FF30 /* Pods-YouDian_AR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouDian_AR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouDian_AR/Pods-YouDian_AR.debug.xcconfig"; sourceTree = "<group>"; };
 		A6E1FF520ABB1264D0A8C3D3 /* Pods-YouDian_AR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouDian_AR.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouDian_AR/Pods-YouDian_AR.release.xcconfig"; sourceTree = "<group>"; };
 		C000307527664458C0C40F51 /* libPods-YouDian_AR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YouDian_AR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0DCD3920D34AFD000AD558 /* NNValidationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNValidationView.h; sourceTree = "<group>"; };
+		CB0DCD3A20D34AFD000AD558 /* NNValidationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNValidationView.m; sourceTree = "<group>"; };
+		CB0DCD3D20D34F55000AD558 /* NNTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNTestViewController.m; sourceTree = "<group>"; };
+		CB0DCD3E20D34F55000AD558 /* NNTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNTestViewController.h; sourceTree = "<group>"; };
+		CB0DCD4020D355F2000AD558 /* NSString+YD_AR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YD_AR.h"; sourceTree = "<group>"; };
+		CB0DCD4120D355F2000AD558 /* NSString+YD_AR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YD_AR.m"; sourceTree = "<group>"; };
 		CB1191D920BD028C0017B8CB /* HUDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HUDViewController.h; sourceTree = "<group>"; };
 		CB1191DA20BD028C0017B8CB /* HUDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HUDViewController.m; sourceTree = "<group>"; };
 		CB614DDA20B7E6FC00EF8909 /* MyCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCardViewController.h; sourceTree = "<group>"; };
@@ -118,6 +127,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB0DCD3720D34AFD000AD558 /* ThirdLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				CB0DCD3820D34AFD000AD558 /* 图片验证码 */,
+			);
+			path = ThirdLibrary;
+			sourceTree = "<group>";
+		};
+		CB0DCD3820D34AFD000AD558 /* 图片验证码 */ = {
+			isa = PBXGroup;
+			children = (
+				CB0DCD3E20D34F55000AD558 /* NNTestViewController.h */,
+				CB0DCD3D20D34F55000AD558 /* NNTestViewController.m */,
+				CB0DCD3920D34AFD000AD558 /* NNValidationView.h */,
+				CB0DCD3A20D34AFD000AD558 /* NNValidationView.m */,
+			);
+			path = "图片验证码";
+			sourceTree = "<group>";
+		};
+		CB0DCD4320D35611000AD558 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CB0DCD4020D355F2000AD558 /* NSString+YD_AR.h */,
+				CB0DCD4120D355F2000AD558 /* NSString+YD_AR.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		CBF5B54820AE840200FBACC4 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +162,8 @@
 				CBF5B58720AEA7A900FBACC4 /* Model */,
 				CBF5B58920AEA7A900FBACC4 /* View */,
 				CBF5B58820AEA7A900FBACC4 /* Controllers */,
+				CB0DCD4320D35611000AD558 /* Category */,
+				CB0DCD3720D34AFD000AD558 /* ThirdLibrary */,
 				CBF5B56C20AE840800FBACC4 /* YouDian_ARTests */,
 				CBF5B57720AE840800FBACC4 /* YouDian_ARUITests */,
 				CBF5B55220AE840200FBACC4 /* Products */,
@@ -388,11 +427,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-YouDian_AR/Pods-YouDian_AR-resources.sh",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -410,11 +451,14 @@
 				CBF5B59720AEABF900FBACC4 /* ARScanViewController.m in Sources */,
 				CB614DE220B7F7DF00EF8909 /* ARTableViewCell.m in Sources */,
 				CBF5B5A020AEC31E00FBACC4 /* AppDelegate+AR.m in Sources */,
+				CB0DCD3F20D34F56000AD558 /* NNTestViewController.m in Sources */,
 				CBF5B56420AE840800FBACC4 /* main.m in Sources */,
+				CB0DCD3B20D34AFD000AD558 /* NNValidationView.m in Sources */,
 				CB614DDF20B7E75700EF8909 /* HttpManager.m in Sources */,
 				CB614DDC20B7E6FC00EF8909 /* MyCardViewController.m in Sources */,
 				CBF5B59420AEABC400FBACC4 /* UserInfoViewController.m in Sources */,
 				CBF5B58C20AEA7D500FBACC4 /* MainViewController.m in Sources */,
+				CB0DCD4220D355F2000AD558 /* NSString+YD_AR.m in Sources */,
 				CBF5B55620AE840200FBACC4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,7 +617,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YouDian_AR/YouDian.pch";
 				INFOPLIST_FILE = YouDian_AR/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-AR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -593,7 +640,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YouDian_AR/YouDian.pch";
 				INFOPLIST_FILE = YouDian_AR/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-AR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -608,7 +658,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJMWZ37P3G;
 				INFOPLIST_FILE = YouDian_ARTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-ARTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -623,7 +677,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJMWZ37P3G;
 				INFOPLIST_FILE = YouDian_ARTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-ARTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -637,7 +695,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJMWZ37P3G;
 				INFOPLIST_FILE = YouDian_ARUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-ARUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -651,7 +713,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJMWZ37P3G;
 				INFOPLIST_FILE = YouDian_ARUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "YouDian.YouDian-ARUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

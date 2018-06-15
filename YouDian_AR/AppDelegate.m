@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegate+AR.h"
 #import "MainViewController.h"
 #import "ARScanViewController.h"
 #import "UserInfoViewController.h"
@@ -51,9 +52,6 @@
     [[UINavigationBar appearance]  setTranslucent:YES];
     [[UINavigationBar appearance]  setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
     self.window.rootViewController = tabBar;
-    
-    
-    
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

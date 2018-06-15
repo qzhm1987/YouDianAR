@@ -10,9 +10,10 @@
 #define YouDian_pch
 
 #import "AppDelegate.h"
+#import "AppDelegate+AR.h"
 #import <Masonry.h>
 #import <AFNetworking.h>
-#import <Toast.h>
+#import "UIView+Toast.h"
 #import <FMDB.h>
 #import <YYModel.h>
 #import <MJRefresh.h>
@@ -38,7 +39,7 @@
 #define SCREEN_WIDTH  [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT  [[UIScreen mainScreen] bounds].size.height
 #define PIX (SCREEN_WIDTH/375.0f)
-#define UP_OFFSET 25//距离底端距离
+#define UP_OFFSET 10//距离底端距离
 
 #define WTOAST(msg) UIWindow *window= [UIApplication sharedApplication].keyWindow; [window hideToasts];  [window makeToast:msg duration:1.5 position:CSToastPositionBottom];
 #define CWTOAST(msg) UIWindow *window= [UIApplication sharedApplication].keyWindow; [window hideToasts];  [window makeToast:msg duration:2.0 position:CSToastPositionCenter];

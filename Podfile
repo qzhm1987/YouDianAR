@@ -10,4 +10,5 @@ pod 'SDWebImage', '~> 4.3.3'
 pod 'MBProgressHUD', '~> 1.1.0'
 pod 'MBProgressHUD-Extension', '~> 2.0.0'
 pod 'IQKeyboardManager', '~> 6.0.3'
+pod 'SVProgressHUD', '~> 2.2.5'
 end

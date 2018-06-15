@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MBProgressHUD.h>
 #import <MBProgressHUD+Extension.h>
+#import <SVProgressHUD.h>
 
 @interface HUDViewController : UIViewController
 

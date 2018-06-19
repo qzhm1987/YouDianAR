@@ -7,6 +7,8 @@
 //
 
 #import "MainViewController.h"
+#import "QView.h"
+
 
 
 
@@ -77,7 +79,7 @@
 
 -(NSArray *)functionArray{
     if (!_functionArray) {
-        _functionArray = @[@"我的名片",@"HUD测试",@"功能测试",@"进度条",@"图片验证码"];
+        _functionArray = @[@"我的名片",@"HUD测试",@"iOS动画",@"进度条",@"图片验证码"];
     }
     return _functionArray;
 }

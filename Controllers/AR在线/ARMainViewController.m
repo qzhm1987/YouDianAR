@@ -1,62 +1,38 @@
 //
-//  MainViewController.m
+//  ARMainViewController.m
 //  YouDian_AR
 //
-//  Created by youdian on 2018/5/18.
+//  Created by youdian on 2018/6/26.
 //  Copyright © 2018年 YouDian. All rights reserved.
 //
 
-#import "MainViewController.h"
-#import "QView.h"
-
-#import <AMapLocationKit/AMapLocationKit.h>
-//c44134d7349e4473f7b2a00f678b7b06
-
-
-
-@interface MainViewController ()
+#import "ARMainViewController.h"
+#import "HttpManager.h"
+#import "MoreViewController.h"
+#import "SetViewController.h"
+#import "MyCardViewController.h"
+#import "NetWorkViewController.h"
 
 
-@property (nonatomic, strong) AMapLocationManager *locationManager;
+@interface ARMainViewController ()
+
+@property (strong, nonatomic)NSArray *functionArray;
 @end
-@implementation MainViewController
+
+@implementation ARMainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-   // self.tabBarController.tabBar.hidden = YES;
-    self.navigationItem.title = @"AR首页";
-    [self addMainUI];
-   
-    // 带逆地理信息的一次定位（返回坐标和地址信息）
-    self.locationManager = [[AMapLocationManager alloc]init];
-    // 带逆地理信息的一次定位（返回坐标和地址信息）
-    [self.locationManager setDesiredAccuracy:kCLLocationAccuracyHundredMeters];
-    //   定位超时时间，最低2s，此处设置为2s
-    self.locationManager.locationTimeout =20;
-    //   逆地理请求超时时间，最低2s，此处设置为2s
-    self.locationManager.reGeocodeTimeout = 10;
-  
-    // 带逆地理（返回坐标和地址信息）。将下面代码中的 YES 改成 NO ，则不会返回地址信息。
-    [self.locationManager requestLocationWithReGeocode:YES completionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
-        
-        if (error){
-            NSLog(@"locError:{%ld - %@};", (long)error.code, error.localizedDescription);
-            if (error.code == AMapLocationErrorLocateFailed){
-                return;
-            }
-        }
-        NSLog(@"location:%@", location);
-        
-        if (regeocode)
-        {
-            NSLog(@"reGeocode:%@", regeocode);
-        }
-    }];
+    self.tabBarController.tabBar.hidden = YES;
+    [self addARMainUI];
     
+    // Do any additional setup after loading the view.
 }
 
--(void)addMainUI{
+
+
+-(void)addARMainUI{
     WS(weakSelf)
     CGFloat tabBar_H = [AppDel isIphoneX]?85:49;
     CGFloat width = (SCREEN_WIDTH-75)/3;
@@ -85,39 +61,49 @@
             [self goViewController:@"MyCardViewController"];
             break;
         case 11:
-            [self goViewController:@"HUDViewController"];
+            [self goViewController:@"SetViewController"];
             break;
-        case 14:
-            [self goViewController:@"NNTestViewController"];
+        case 12:
+            [self netRequest];
             break;
-        case 15:
-            [self goViewController:@"ARMainViewController"];
+        case 13:
+             [self moreViewController];
             break;
-            
         default:
             break;
     }
     
 }
 
+
+-(void)netRequest{
+    NSString *urlStr = @"https://ar.zhyell.com/api/login/quick";
+    NSString *sessionId = @"884d2069935843c437fd7e97f3b93816_f9e21578-1783-4245-8745-ed41078f24e3_e10adc3949ba59abbe56e057f20f883e";
+    NSDictionary *parameters = NSDictionaryOfVariableBindings(sessionId);
+    [HttpManager postDataWithUrl:urlStr andParameters:parameters success:^(id responseObject) {
+        DLog(@"Res = %@",responseObject);
+    } fail:^(NSURLSessionDataTask *task, NSError *error) {
+        DLog(@"错误error = %@",error.description);
+    }];
+}
+
+-(void)moreViewController{
+    MoreViewController *more = [MoreViewController new];
+    
+    [self.navigationController pushViewController:more animated:YES];
+    
+    
+}
 -(void)goViewController:(NSString *)viewController{
     UIViewController * vc = [NSClassFromString(viewController) new];
     [self.navigationController pushViewController:vc animated:YES];
 }
-
-#pragma mark GET
-
 -(NSArray *)functionArray{
     if (!_functionArray) {
-        _functionArray = @[@"我的名片",@"HUD测试",@"iOS动画",@"进度条",@"图片验证码",@"AR在线"];
+        _functionArray = @[@"我的名片",@"AR设置",@"网络请求",@"多页面"];
     }
     return _functionArray;
 }
-
-
-
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

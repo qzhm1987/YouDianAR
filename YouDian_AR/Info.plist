@@ -39,11 +39,24 @@
 	<string>访问相机相册</string>
 	<key>NSCameraUsageDescription</key>
 	<string>访问相机</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>请求一直使用定位1</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>请求一直使用定位2</string>
+	<key>NSLocationUsageDescription</key>
+	<string>请求定位1</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>请求使用定位2</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>CFBundleDisplayName</key>
 	<string></string>
 	<key>CFBundleAllowMixedLocalizations</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

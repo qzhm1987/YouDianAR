@@ -7,6 +7,7 @@
 //
 
 #import "HUDViewController.h"
+#import "MBProgressHUD+Extension.h"
 
 @interface HUDViewController ()
 
@@ -17,11 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    MBProgressHUD *hud =[MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.label.text = @"正在加载";
-    hud.label.textColor = [UIColor whiteColor];
-    hud.bezelView.backgroundColor=[UIColor blackColor];
-    
+    [MBProgressHUD showActivityIndicatorWithTip:@"正在上传" inView:self.view];
+    [self performSelector:@selector(hide) withObject:nil afterDelay:3];
     /*
      [SVProgressHUD showWithStatus:@"加载中"];
      [SVProgressHUD dismiss];
@@ -48,6 +46,9 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)hide {
+    [MBProgressHUD hideHUDInView:self.view];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

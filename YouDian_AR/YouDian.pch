@@ -19,6 +19,10 @@
 #import <MJRefresh.h>
 #import <MBProgressHUD+Extension.h>
 
+#import "ARTableViewCell.h"
+
+
+
 
 
 #define TABLE_COLOR [UIColor groupTableViewBackgroundColor]

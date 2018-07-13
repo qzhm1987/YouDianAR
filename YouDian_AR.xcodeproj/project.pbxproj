@@ -12,9 +12,13 @@
 		CB0DCD3F20D34F56000AD558 /* NNTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0DCD3D20D34F55000AD558 /* NNTestViewController.m */; };
 		CB0DCD4220D355F2000AD558 /* NSString+YD_AR.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0DCD4120D355F2000AD558 /* NSString+YD_AR.m */; };
 		CB1191DB20BD028C0017B8CB /* HUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1191DA20BD028C0017B8CB /* HUDViewController.m */; };
+		CB327A2520E1E4C4005017FF /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB327A2420E1E4C4005017FF /* SetViewController.m */; };
+		CB327A2820E1E5A1005017FF /* ARMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB327A2720E1E5A1005017FF /* ARMainViewController.m */; };
+		CB3D898B20F873BB009E62D2 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3D898A20F873BB009E62D2 /* MoreViewController.m */; };
 		CB614DDC20B7E6FC00EF8909 /* MyCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614DDB20B7E6FC00EF8909 /* MyCardViewController.m */; };
 		CB614DDF20B7E75700EF8909 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614DDE20B7E75700EF8909 /* HttpManager.m */; };
 		CB614DE220B7F7DF00EF8909 /* ARTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB614DE120B7F7DF00EF8909 /* ARTableViewCell.m */; };
+		CB9A152E20EB69BE00D16A37 /* NetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9A152D20EB69BE00D16A37 /* NetWorkViewController.m */; };
 		CBBA86DA20D3B11200D26617 /* QView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBA86D920D3B11200D26617 /* QView.m */; };
 		CBF5B55620AE840200FBACC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF5B55520AE840200FBACC4 /* AppDelegate.m */; };
 		CBF5B55E20AE840800FBACC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF5B55D20AE840800FBACC4 /* Assets.xcassets */; };
@@ -56,12 +60,20 @@
 		CB0DCD4120D355F2000AD558 /* NSString+YD_AR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YD_AR.m"; sourceTree = "<group>"; };
 		CB1191D920BD028C0017B8CB /* HUDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HUDViewController.h; sourceTree = "<group>"; };
 		CB1191DA20BD028C0017B8CB /* HUDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HUDViewController.m; sourceTree = "<group>"; };
+		CB327A2320E1E4C4005017FF /* SetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
+		CB327A2420E1E4C4005017FF /* SetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
+		CB327A2620E1E5A1005017FF /* ARMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMainViewController.h; sourceTree = "<group>"; };
+		CB327A2720E1E5A1005017FF /* ARMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARMainViewController.m; sourceTree = "<group>"; };
+		CB3D898920F873BB009E62D2 /* MoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		CB3D898A20F873BB009E62D2 /* MoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
 		CB614DDA20B7E6FC00EF8909 /* MyCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCardViewController.h; sourceTree = "<group>"; };
 		CB614DDB20B7E6FC00EF8909 /* MyCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCardViewController.m; sourceTree = "<group>"; };
 		CB614DDD20B7E75700EF8909 /* HttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
 		CB614DDE20B7E75700EF8909 /* HttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
 		CB614DE020B7F7DF00EF8909 /* ARTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARTableViewCell.h; sourceTree = "<group>"; };
 		CB614DE120B7F7DF00EF8909 /* ARTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARTableViewCell.m; sourceTree = "<group>"; };
+		CB9A152C20EB69BE00D16A37 /* NetWorkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkViewController.h; sourceTree = "<group>"; };
+		CB9A152D20EB69BE00D16A37 /* NetWorkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkViewController.m; sourceTree = "<group>"; };
 		CBBA86D820D3B11200D26617 /* QView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QView.h; sourceTree = "<group>"; };
 		CBBA86D920D3B11200D26617 /* QView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QView.m; sourceTree = "<group>"; };
 		CBF5B55120AE840200FBACC4 /* YouDian_AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouDian_AR.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +170,30 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		CB327A2220E1E381005017FF /* AR在线 */ = {
+			isa = PBXGroup;
+			children = (
+				CB327A2620E1E5A1005017FF /* ARMainViewController.h */,
+				CB327A2720E1E5A1005017FF /* ARMainViewController.m */,
+				CB327A2320E1E4C4005017FF /* SetViewController.h */,
+				CB327A2420E1E4C4005017FF /* SetViewController.m */,
+				CB614DDA20B7E6FC00EF8909 /* MyCardViewController.h */,
+				CB614DDB20B7E6FC00EF8909 /* MyCardViewController.m */,
+				CB9A152C20EB69BE00D16A37 /* NetWorkViewController.h */,
+				CB9A152D20EB69BE00D16A37 /* NetWorkViewController.m */,
+				CB3D898920F873BB009E62D2 /* MoreViewController.h */,
+				CB3D898A20F873BB009E62D2 /* MoreViewController.m */,
+			);
+			path = "AR在线";
+			sourceTree = "<group>";
+		};
+		CB327A2920E1ED42005017FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		CBF5B54820AE840200FBACC4 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +201,7 @@
 				CBF5B58720AEA7A900FBACC4 /* Model */,
 				CBF5B58920AEA7A900FBACC4 /* View */,
 				CBF5B58820AEA7A900FBACC4 /* Controllers */,
+				CB327A2920E1ED42005017FF /* Resources */,
 				CB0DCD4320D35611000AD558 /* Category */,
 				CB0DCD3720D34AFD000AD558 /* ThirdLibrary */,
 				CBF5B56C20AE840800FBACC4 /* YouDian_ARTests */,
@@ -230,6 +267,7 @@
 		CBF5B58820AEA7A900FBACC4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CB327A2220E1E381005017FF /* AR在线 */,
 				CBF5B58D20AEA81100FBACC4 /* 首页 */,
 				CBF5B59120AEAA9600FBACC4 /* AR扫描 */,
 				CBF5B59020AEAA9600FBACC4 /* 个人中心 */,
@@ -253,8 +291,6 @@
 			children = (
 				CBF5B58A20AEA7D500FBACC4 /* MainViewController.h */,
 				CBF5B58B20AEA7D500FBACC4 /* MainViewController.m */,
-				CB614DDA20B7E6FC00EF8909 /* MyCardViewController.h */,
-				CB614DDB20B7E6FC00EF8909 /* MyCardViewController.m */,
 				CB1191D920BD028C0017B8CB /* HUDViewController.h */,
 				CB1191DA20BD028C0017B8CB /* HUDViewController.m */,
 			);
@@ -433,12 +469,14 @@
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/UMCShare/UMShare/UMSocialUI/UMSocialSDKResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -457,11 +495,15 @@
 				CBBA86DA20D3B11200D26617 /* QView.m in Sources */,
 				CB614DE220B7F7DF00EF8909 /* ARTableViewCell.m in Sources */,
 				CBF5B5A020AEC31E00FBACC4 /* AppDelegate+AR.m in Sources */,
+				CB9A152E20EB69BE00D16A37 /* NetWorkViewController.m in Sources */,
 				CB0DCD3F20D34F56000AD558 /* NNTestViewController.m in Sources */,
 				CBF5B56420AE840800FBACC4 /* main.m in Sources */,
 				CB0DCD3B20D34AFD000AD558 /* NNValidationView.m in Sources */,
+				CB327A2820E1E5A1005017FF /* ARMainViewController.m in Sources */,
+				CB327A2520E1E4C4005017FF /* SetViewController.m in Sources */,
 				CB614DDF20B7E75700EF8909 /* HttpManager.m in Sources */,
 				CB614DDC20B7E6FC00EF8909 /* MyCardViewController.m in Sources */,
+				CB3D898B20F873BB009E62D2 /* MoreViewController.m in Sources */,
 				CBF5B59420AEABC400FBACC4 /* UserInfoViewController.m in Sources */,
 				CBF5B58C20AEA7D500FBACC4 /* MainViewController.m in Sources */,
 				CB0DCD4220D355F2000AD558 /* NSString+YD_AR.m in Sources */,

@@ -13,3 +13,10 @@
 @property (strong, nonatomic)UIImageView *proImgView;
 @property (strong, nonatomic)UILabel *label;
 @end
+
+@interface SetTableViewCell : UITableViewCell
+
+
+@property (strong, nonatomic)UILabel *funLabel;
+@property (strong, nonatomic)UIView *subView;
+@end

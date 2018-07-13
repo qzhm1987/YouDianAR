@@ -11,6 +11,8 @@
 #import "MainViewController.h"
 #import "ARScanViewController.h"
 #import "UserInfoViewController.h"
+#import <UMCommon/UMCommon.h>
+
 
 
 @interface AppDelegate ()
@@ -24,6 +26,8 @@
      self.window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self setWindowRootViewController];
     [self.window makeKeyAndVisible];
+    [UMConfigure initWithAppkey:@"5b3eccf08f4a9d13760001ca" channel:@"App Store"];
+     [AMapServices sharedServices].apiKey = @"c44134d7349e4473f7b2a00f678b7b06";
     // Override point for customization after application launch.
     return YES;
 }

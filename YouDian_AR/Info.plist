@@ -47,6 +47,10 @@
 	<string>请求定位1</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>请求使用定位2</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>相册</string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>CFBundleDisplayName</key>

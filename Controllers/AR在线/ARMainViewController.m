@@ -69,6 +69,9 @@
         case 13:
              [self moreViewController];
             break;
+        case 14:
+            [self goViewController:@"ARScanViewController"];
+            break;
         default:
             break;
     }
@@ -100,7 +103,7 @@
 }
 -(NSArray *)functionArray{
     if (!_functionArray) {
-        _functionArray = @[@"我的名片",@"AR设置",@"网络请求",@"多页面"];
+        _functionArray = @[@"我的名片",@"AR设置",@"网络请求",@"多页面",@"AR识别"];
     }
     return _functionArray;
 }
